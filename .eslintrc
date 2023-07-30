@@ -1,0 +1,41 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es6": true,
+    "es2021": true
+  },
+  "extends": ["react-app", "plugin:prettier/recommended", "prettier"],
+  "plugins": ["react", "import", "@typescript-eslint", "prettier", "react-hooks"],
+  "ignorePatterns": ["node_modules"],
+  "rules": {
+    "@typescript-eslint/comma-dangle": "off",
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "react-hooks/rules-of-hooks": "error",
+    "comma-dangle": "off",
+    "curly": "warn",
+    "no-unused-vars": "off",
+    "react/no-unknown-property": [
+      2,
+      {
+        "ignore": ["custom-element", "global", "jsx"]
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "require-await": "error",
+    "import/no-duplicates": "error",
+    "import/order": [
+      "error",
+      {
+        "groups": [["builtin", "external"], "internal", ["parent", "sibling", "index"]],
+        "newlines-between": "always"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins/reset.scss";
+@import "../../scss/mixins/utility.scss";
+@import "../../scss/mixins/text.scss";
+
+.button {
+  @include reset-button();
+  @include focus();
+  background-color: transparent;
+  border: 1px solid $grey-low-bay;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 12px 13px;
+  padding: 10px;
+  position: relative;
+  text-overflow: ellipsis;
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:hover {
+    border-color: $aqua;
+  }
+
+  &:disabled {
+    @include disabled();
+  }
+}
+
+.label {
+  @include textRegular-14();
+}

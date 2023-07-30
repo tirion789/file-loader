@@ -1,0 +1,62 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins/text.scss";
+@import "../../scss/mixins/utility.scss";
+
+.file_loader {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0 auto;
+  margin-top: 60px;
+  max-width: 470px;
+}
+
+.loading_label {
+  @include textRegular-14();
+}
+
+.hidden {
+  height: 0;
+  line-height: 0;
+  margin: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 0;
+}
+
+.dropzone_container {
+  display: grid;
+  position: relative;
+}
+
+.dropzone {
+  @include focus();
+  @include textRegular-14();
+  align-items: center;
+  border: 1px dashed $grey-low-bay;
+  border-radius: 8px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+
+  &:hover:not(.dropzone_disabled) {
+    border-color: $aqua;
+  }
+}
+
+.dropzone_dragover {
+  border-color: $aqua;
+}
+
+.dropzone_text {
+  color: $dark-grey;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.dropzone_disabled {
+  @include disabled();
+}

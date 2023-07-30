@@ -1,0 +1,19 @@
+@import "../variables.scss";
+
+@mixin basic-text {
+  color: $dark-grey;
+  font-family: $font-family-roboto-mono;
+  font-style: normal;
+  line-height: normal;
+}
+
+@mixin textRegular-14 {
+  @include basic-text();
+  font-size: 14px;
+  font-weight: $font-weight-regular;
+}
+
+@mixin textBold-14 {
+  @include textRegular-14();
+  font-weight: $font-weight-bold;
+}

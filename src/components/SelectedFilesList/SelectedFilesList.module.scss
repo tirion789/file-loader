@@ -1,0 +1,43 @@
+@import "../../scss/variables.scss";
+@import "../../scss/mixins/text.scss";
+@import "../../scss/mixins/utility.scss";
+
+.files_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32.48px;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.file {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 230px;
+  max-width: 140px;
+  text-align: center;
+}
+
+.files_image {
+  height: 160px;
+  margin-top: 10px;
+  width: 140px;
+}
+
+.title {
+  @include textBold-14();
+}
+
+.label {
+  @include textRegular-14();
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  display: -moz-box;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
