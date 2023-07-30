@@ -12,7 +12,7 @@ export const SelectedFilesList = ({
 }: SelectedFilesListProps) => {
   return (
     <>
-      {selectedFiles.length ? <h1 className={styles.title}>Selected files list</h1> : ''}
+      {selectedFiles.length ? <h1 className={styles.title}>Список выбранных файлов:</h1> : ''}
       <ul className={styles.files_list}>
         {selectedFiles?.map((file, index) => (
           <li
@@ -22,7 +22,7 @@ export const SelectedFilesList = ({
             <Button
               isDisabled={isDisabled}
               onClick={() => handleClickRemoveFile(file.name)}
-              label="Delete file"
+              label="Удалить файл"
             />
             <img
               className={styles.files_image}
