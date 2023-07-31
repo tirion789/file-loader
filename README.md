@@ -2,20 +2,22 @@
 
 ---
 
-## Available Scripts
+## Доступные скрипты
 
-`yarn install` - install dependencies
-`yarn start` - run application in development mode (localhost:3000)
-`yarn build` - build project
+`yarn install` - установить зависимости
 
----
+`yarn start` - запустить приложение в режиме разработки (localhost:3000)
 
-## Environments
-
-`REACT_APP_CLIENT_ID` - your client id from yandex api
+`yarn build` - собрать проект
 
 ---
 
-## Notes
+## Окружающая среда
 
-You should change your yandex auth redirect on `localhost:3000`
+`REACT_APP_CLIENT_ID` - ваш client id из yandex disk api
+
+---
+
+## Примечания
+
+Вы должны изменить перенаправление авторизации yandex на `localhost:3000`

@@ -48,8 +48,8 @@ export const FileLoader = () => {
 
   if (!token) {
     return (
-      <div>
-        <button onClick={handleAuth}>Авторизоваться на Яндекс.Диске</button>
+      <div className={styles.auth_container}>
+        <Button label="Авторизоваться на Яндекс.Диске" onClick={handleAuth} />
       </div>
     );
   }
